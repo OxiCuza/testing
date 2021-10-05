@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <form action="https://drchrono.com/o/token/" method="post">
+    <!-- <form action="https://drchrono.com/o/token/" method="post">
         <div>
             code
             <input type="text" value="" name="code">
@@ -89,11 +89,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div id="daily">
-
-    </div>
+    </div> -->
 
     <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.6.5.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -109,7 +105,7 @@
 
     <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
     <script>
-        callFrame = $('#daily').DailyIframe.createFrame();
+        callFrame = window.DailyIframe.createFrame();
         callFrame.join({ url: 'https://testingsesion.daily.co/testing-room' })
     </script>
 </body>
