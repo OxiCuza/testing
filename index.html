@@ -91,6 +91,10 @@
         </div>
     </div>
 
+    <div id="daily">
+
+    </div>
+
     <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.6.5.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
@@ -105,7 +109,7 @@
 
     <script crossorigin src="https://unpkg.com/@daily-co/daily-js"></script>
     <script>
-        callFrame = window.DailyIframe.createFrame();
+        callFrame = $('#daily').DailyIframe.createFrame();
         callFrame.join({ url: 'https://testingsesion.daily.co/testing-room' })
     </script>
 </body>
